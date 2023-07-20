@@ -11,8 +11,6 @@ import { useEffect, useState } from "react";
 import CreateBlog from "./CreateBlog";
 import NotFound from "./NotFound";
 import useFetch from "./useFetch";
-import { BrowserRouter } from "react-router-dom";
-
 function App() {
   // const {
   //   data: blogs,
@@ -20,22 +18,21 @@ function App() {
   //   error,
   // } = useFetch("http://localhost:8000/blogs");
   return (
-    <BrowserRouter basename="/discord-clone">
-      <Router>
-        <div className="App">
-          <Switch>
-            <Route exact path="/discord-clone/">
-              <HeaderHome />
-              <Content />
-              <Footer />
-            </Route>
-            <Route path="/discover">
-              <HeaderDiscover />
-              <ContentDiscover />
-              <ContentDiscover2 />
-              <Footer />
-            </Route>
-            {/* <Route path="/discord-clone/blog">
+    <Router basename="/discord-clone">
+      <div className="App">
+        <Switch>
+          <Route exact path="/discord-clone/">
+            <HeaderHome />
+            <Content />
+            <Footer />
+          </Route>
+          <Route path="/discover">
+            <HeaderDiscover />
+            <ContentDiscover />
+            <ContentDiscover2 />
+            <Footer />
+          </Route>
+          {/* <Route path="/discord-clone/blog">
             <HeaderBlog />
             {error && <div>Error: {error}</div>}
             {blogs && <Blog blogs={blogs} />}
@@ -46,14 +43,13 @@ function App() {
             <CreateBlog />
             <Footer />
           </Route> */}
-            <Route path="*">
-              <NotFound />
-              <Footer />
-            </Route>
-          </Switch>
-        </div>
-      </Router>
-    </BrowserRouter>
+          <Route path="*">
+            <NotFound />
+            <Footer />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
