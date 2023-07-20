@@ -29,7 +29,7 @@ function App() {
               <Content />
               <Footer />
             </Route>
-            <Route path="/discord-clone/discover">
+            <Route path="/discover">
               <HeaderDiscover />
               <ContentDiscover />
               <ContentDiscover2 />
