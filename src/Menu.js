@@ -17,10 +17,10 @@ const Menu = ({ openCloseMenu }) => {
             </button>
           </div>
           <div className="link flexcol">
-            <a href="discord-clone/">Home</a>
-            <a href="discord-clone/discover">Discover</a>
-            <a href="discord-clone/blog">Blog</a>
-            <a href="discord-clone/create">Create Blog</a>
+            <a href="/">Home</a>
+            <a href="/discover">Discover</a>
+            <a href="/blog">Blog</a>
+            <a href="/create">Create Blog</a>
             <a href="/nitro">Nitro</a>
             <a href="/safety">Safety</a>
             <a href="/academy">Mod Academy</a>
