@@ -13,37 +13,37 @@ import NotFound from "./NotFound";
 import useFetch from "./useFetch";
 
 function App() {
-  // const {
-  //   data: blogs,
-  //   isPending,
-  //   error,
-  // } = useFetch("http://localhost:8000/blogs");
+  const {
+    data: blogs,
+    isPending,
+    error,
+  } = useFetch("http://localhost:8000/blogs");
   return (
     <Router>
       <div className="App">
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/discord-clone/">
             <HeaderHome />
             <Content />
             <Footer />
           </Route>
-          <Route path="/discover">
+          <Route path="/discord-clone/discover">
             <HeaderDiscover />
             <ContentDiscover />
             <ContentDiscover2 />
             <Footer />
           </Route>
-          {/* <Route path="/blog">
+          <Route path="discord-clone/blog">
             <HeaderBlog />
             {error && <div>Error: {error}</div>}
             {blogs && <Blog blogs={blogs} />}
             <Footer />
           </Route>
-          <Route path="/create">
+          <Route path="discorc-clone/create">
             <HeaderBlog />
             <CreateBlog />
             <Footer />
-          </Route> */}
+          </Route>
           <Route path="*">
             <NotFound />
             <Footer />
