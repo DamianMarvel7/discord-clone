@@ -12,16 +12,16 @@ import CreateBlog from "./CreateBlog";
 import NotFound from "./NotFound";
 import useFetch from "./useFetch";
 function App() {
-  // const {
-  //   data: blogs,
-  //   isPending,
-  //   error,
-  // } = useFetch("http://localhost:8000/blogs");
+  const {
+    data: blogs,
+    isPending,
+    error,
+  } = useFetch("http://localhost:8000/blogs");
   return (
     <Router basename="/discord-clone">
       <div className="App">
         <Switch>
-          <Route exact path="/discord-clone/">
+          <Route exact path="/">
             <HeaderHome />
             <Content />
             <Footer />
@@ -32,17 +32,17 @@ function App() {
             <ContentDiscover2 />
             <Footer />
           </Route>
-          {/* <Route path="/discord-clone/blog">
+          <Route path="/blog">
             <HeaderBlog />
             {error && <div>Error: {error}</div>}
             {blogs && <Blog blogs={blogs} />}
             <Footer />
           </Route>
-          <Route path="/discord-clone/create">
+          <Route path="/create">
             <HeaderBlog />
             <CreateBlog />
             <Footer />
-          </Route> */}
+          </Route>
           <Route path="*">
             <NotFound />
             <Footer />

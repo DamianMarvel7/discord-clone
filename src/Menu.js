@@ -1,5 +1,6 @@
 import logo from "./img/discord-black.svg";
 import close from "./img/close.svg";
+import { Link } from "react-router-dom";
 
 const Menu = ({ openCloseMenu }) => {
   return (
@@ -17,15 +18,15 @@ const Menu = ({ openCloseMenu }) => {
             </button>
           </div>
           <div className="link flexcol">
-            <a href="/">Home</a>
-            <a href="/discover">Discover</a>
-            <a href="/blog">Blog</a>
-            <a href="/create">Create Blog</a>
-            <a href="/nitro">Nitro</a>
-            <a href="/safety">Safety</a>
-            <a href="/academy">Mod Academy</a>
-            <a href="/support">Support</a>
-            <a href="/careers">Careers</a>
+            <Link to="/">Home</Link>
+            <Link to="/discover">Discover</Link>
+            <Link to="/blog">Blog</Link>
+            <Link to="/create">Create Blog</Link>
+            <Link to="/nitro">Nitro</Link>
+            <Link to="/safety">Safety</Link>
+            <Link to="/academy">Mod Academy</Link>
+            <Link to="/support">Support</Link>
+            <Link to="/careers">Careers</Link>
           </div>
         </div>
       </div>
