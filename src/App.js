@@ -33,13 +33,13 @@ function App() {
             <ContentDiscover2 />
             <Footer />
           </Route>
-          <Route path="discord-clone/blog">
+          <Route path="/discord-clone/blog">
             <HeaderBlog />
             {error && <div>Error: {error}</div>}
             {blogs && <Blog blogs={blogs} />}
             <Footer />
           </Route>
-          <Route path="discorc-clone/create">
+          <Route path="/discord-clone/create">
             <HeaderBlog />
             <CreateBlog />
             <Footer />

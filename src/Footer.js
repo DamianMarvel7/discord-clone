@@ -48,8 +48,8 @@ const Footer = () => {
         </div>
         <div className="footer4">
           <h4>Resources</h4>
-          <a href="/blog">Blog</a>
-          <a href="/create">Create Blog</a>
+          <a href="discord-clone/blog">Blog</a>
+          <a href="discord-clone/create">Create Blog</a>
           <a href="">Support</a>
           <a href="">Safety</a>
           <a href="">Feedback</a>
